@@ -201,15 +201,13 @@
   z-index:1;
 }
 
-
-.curve-text{
-  display:block;
-  width:100%;
-  max-width:420px;
-  height:auto;
-  overflow:visible;
-  color:var(--ink);
+.bump{
+  display:inline-block;
+  position:relative;
 }
+.b1{ top:-2px; }
+.b2{ top:-6px; }
+.b3{ top:-2px; }
 
 @media (max-width: 860px){
   .hero-top{flex-direction:column-reverse; gap:1.2rem;}
@@ -441,15 +439,7 @@
 
       <span class="eyebrow">Geometry of tumor state</span>
       
-      <h1>
-  Reading tumors off the
-  <svg class="curve-text" viewBox="0 0 380 100" preserveAspectRatio="xMinYMid meet">
-    <path id="curvePath" d="M5,75 C100,15 260,15 375,55" fill="none" stroke="none"/>
-    <text font-family="Fraunces, serif" font-weight="500" font-size="42" fill="currentColor">
-      <textPath href="#curvePath" startOffset="0">Riemannian geometry.</textPath>
-    </text>
-  </svg>
-</h1>
+      <h1>Reading tumors off the Riemannian g<span class="bump b1">e</span><span class="bump b2">o</span><span class="bump b3">m</span>etry.</h1>
       
       
       <p class="lede">
