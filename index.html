@@ -153,7 +153,29 @@
     max-width:52ch;
   }
   .hero .lede strong{color:var(--ink); font-weight:600;}
+  
+  
+  .hero-top{
+  display:flex;
+  gap:2.2rem;
+  align-items:flex-start;
+  justify-content:space-between;
+}
+.hero-text{flex:1; min-width:0;}
+.hero-photo{
+  width:150px;
+  height:170px;
+  object-fit:cover;
+  border:1px solid var(--line);
+  border-radius:2px;
+  flex-shrink:0;
+}
 
+
+@media (max-width: 860px){
+  .hero-top{flex-direction:column-reverse; gap:1.2rem;}
+  .hero-photo{width:120px; height:136px;}
+}
   .geo-figure{
     margin-top:0.5rem;
     max-width:560px;
@@ -324,7 +346,8 @@
   <main>
 
     <section id="home" class="hero">
-      <img class="hero-photo" src="me.png" alt="Portrait of Negar">
+      <div class="hero-top">
+      <div class="hero-text">
       <span class="eyebrow">Geometry of tumor state</span>
       <h1>Reading tumor evolution off the shape of the data.</h1>
       <p class="lede">
@@ -335,6 +358,7 @@
         trajectory on a curved latent manifold</strong>, rather than a
         cluster label.
       </p>
+      
 
       <figure class="geo-figure">
         <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="geoTitle geoDesc">
@@ -380,6 +404,11 @@
         </svg>
         <div class="geo-caption">fig. geodesic inferred on the pullback metric of a learned latent space</div>
       </figure>
+      
+          </div>
+         <img class="hero-photo" src="me.png" alt="Portrait of Negar">
+       </div>
+        
 
       <div class="cta-row">
         <a class="btn" href="#research">View research →</a>
