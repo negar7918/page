@@ -1,99 +1,489 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.5">
-  <style type="text/css">
-    body {background-color: #f4f3ed}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #f4f3ed; -webkit-text-stroke: #f4f3ed; background-color: #131c1b}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.6px 'Helvetica Neue'; color: #131c1b; -webkit-text-stroke: #131c1b}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e}
-    p.p5 {margin: 0.0px 0.0px 13.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e; min-height: 16.0px}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #131c1b; -webkit-text-stroke: #131c1b}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #131c1b; -webkit-text-stroke: #131c1b}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.4px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.4px 'Helvetica Neue'; color: #131c1b; -webkit-text-stroke: #131c1b}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.4px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #6d6d6d; -webkit-text-stroke: #6d6d6d; min-height: 18.0px}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.6px 'Helvetica Neue'; color: #265d4f; -webkit-text-stroke: #265d4f}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 22.8px 'Helvetica Neue'; color: #131c1b; -webkit-text-stroke: #131c1b; min-height: 27.0px}
-    p.p14 {margin: 0.0px 0.0px 12.9px 0.0px; font: 13.0px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e}
-    p.p15 {margin: 0.0px 0.0px 16.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e; min-height: 18.0px}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #131c1b; -webkit-text-stroke: #131c1b; min-height: 18.0px}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e; min-height: 11.0px}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #131c1b; -webkit-text-stroke: #131c1b}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 7.8px 'Helvetica Neue'; color: #265d4f; -webkit-text-stroke: #265d4f}
-    p.p23 {margin: 0.0px 0.0px 10.8px 0.0px; font: 10.8px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e; min-height: 12.0px}
-    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e}
-    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e; min-height: 18.0px}
-    p.p27 {margin: 0.0px 0.0px 10.2px 0.0px; font: 10.2px 'Helvetica Neue'; color: #36423e; -webkit-text-stroke: #36423e}
-    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #265d4f; -webkit-text-stroke: #265d4f}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; background-color: #f4f3ed}
-    span.s3 {background-color: #f4f3ed; -webkit-text-stroke: 0px #000000}
-    span.s4 {font-kerning: none; -webkit-text-stroke: 0px #000000}
-    span.s5 {font-kerning: none; color: #131c1b; -webkit-text-stroke: 0px #131c1b}
-    span.s6 {font: 12.6px 'Helvetica Neue'; font-kerning: none; -webkit-text-stroke: 0px #000000}
-    span.s7 {font: 7.8px 'Helvetica Neue'; font-kerning: none}
-    span.s8 {font: 12.6px 'Helvetica Neue'; font-kerning: none}
-    span.s9 {font: 10.2px 'Helvetica Neue'; font-kerning: none; color: #265d4f; background-color: transparent; -webkit-text-stroke: 0px #265d4f}
-    ul.ul1 {list-style-type: disc}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Negar — Computational Biology Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #182524;
+    --ink-soft: #45534f;
+    --paper: #f6f5f1;
+    --paper-raised: #eeece5;
+    --line: #d8d5cb;
+    --teal: #2f6f62;
+    --teal-soft: #e4ede9;
+    --violet: #5b5a86;
+    --violet-soft: #eceafb;
+    --max: 920px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    color:var(--ink);
+    margin:0;
+  }
+
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--teal);
+  }
+
+  a{color:var(--teal); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  /* Skip link for keyboard users */
+  .skip-link{
+    position:absolute; left:-999px; top:0;
+    background:var(--ink); color:var(--paper); padding:0.6rem 1rem; z-index:100;
+  }
+  .skip-link:focus{left:1rem; top:1rem;}
+
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--teal);
+    outline-offset:3px;
+  }
+
+  /* ---------- Layout shell ---------- */
+  .shell{
+    display:grid;
+    grid-template-columns:240px 1fr;
+    max-width:1240px;
+    margin:0 auto;
+  }
+
+  nav.side{
+    padding:3rem 1.5rem 2rem 2rem;
+    position:sticky;
+    top:0;
+    align-self:start;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+
+  .side-top .name{
+    font-family:'Fraunces', serif;
+    font-size:1.3rem;
+    font-weight:500;
+    line-height:1.25;
+    margin-bottom:0.25rem;
+  }
+  .side-top .role{
+    font-size:0.85rem;
+    color:var(--ink-soft);
+    margin-bottom:2rem;
+  }
+
+  .side nav ul{list-style:none; margin:0; padding:0;}
+  .side nav li{margin-bottom:0.65rem;}
+  .side nav a{
+    color:var(--ink-soft);
+    font-size:0.92rem;
+    padding:0.15rem 0;
+    display:inline-block;
+    border-left:2px solid transparent;
+    padding-left:0.7rem;
+    margin-left:-0.72rem;
+    transition:border-color 0.2s, color 0.2s;
+  }
+  .side nav a:hover, .side nav a.active{
+    color:var(--ink);
+    border-left-color:var(--teal);
+    text-decoration:none;
+  }
+
+  .side-bottom{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    color:var(--ink-soft);
+    line-height:1.8;
+  }
+  .side-bottom a{color:var(--ink-soft);}
+
+  main{padding:3rem 3rem 5rem 2rem;}
+
+  section{
+    max-width:var(--max);
+    padding-top:4.5rem;
+    margin-top:-4.5rem; /* anchor offset */
+  }
+  section:first-of-type{padding-top:0; margin-top:0;}
+
+  .divider{
+    border:none;
+    border-top:1px solid var(--line);
+    margin:3.5rem 0;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    display:flex;
+    flex-direction:column;
+    gap:1.6rem;
+    padding-bottom:1rem;
+  }
+  .hero h1{
+    font-size:clamp(2.1rem, 4vw, 2.9rem);
+    line-height:1.15;
+    max-width:14ch;
+  }
+  .hero .lede{
+    font-size:1.08rem;
+    color:var(--ink-soft);
+    max-width:52ch;
+  }
+  .hero .lede strong{color:var(--ink); font-weight:600;}
+
+  .geo-figure{
+    margin-top:0.5rem;
+    max-width:560px;
+  }
+  .geo-figure svg{width:100%; height:auto; display:block;}
+  .geo-caption{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.7rem;
+    color:var(--ink-soft);
+    margin-top:0.6rem;
+    letter-spacing:0.02em;
+  }
+
+  .cta-row{display:flex; gap:1rem; flex-wrap:wrap; margin-top:0.5rem;}
+  .btn{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.78rem;
+    letter-spacing:0.03em;
+    padding:0.65rem 1.1rem;
+    border:1px solid var(--ink);
+    border-radius:2px;
+    color:var(--ink);
+  }
+  .btn:hover{background:var(--ink); color:var(--paper); text-decoration:none;}
+  .btn.ghost{border-color:var(--line); color:var(--ink-soft);}
+  .btn.ghost:hover{background:transparent; border-color:var(--ink); color:var(--ink);}
+
+  /* ---------- Research ---------- */
+  .research-block{margin-bottom:2.6rem;}
+  .research-block h3{font-size:1.3rem; margin-bottom:0.6rem;}
+  .research-block p{color:var(--ink-soft); max-width:64ch;}
+  .tag-row{display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.9rem;}
+  .tag{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.7rem;
+    background:var(--teal-soft);
+    color:var(--teal);
+    padding:0.28rem 0.6rem;
+    border-radius:2px;
+  }
+  .tag.v{background:var(--violet-soft); color:var(--violet);}
+
+  .status-line{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    color:var(--ink-soft);
+    margin-top:0.9rem;
+  }
+  .dot{width:6px; height:6px; border-radius:50%; background:var(--teal); display:inline-block;}
+
+  /* ---------- Publications ---------- */
+  .pub{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:0.3rem 1.4rem;
+    padding:1.4rem 0;
+    border-top:1px solid var(--line);
+  }
+  .pub:last-child{border-bottom:1px solid var(--line);}
+  .pub .year{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.8rem;
+    color:var(--ink-soft);
+    padding-top:0.2rem;
+  }
+  .pub .title{font-size:1.05rem; font-weight:600; grid-column:2;}
+  .pub .meta{color:var(--ink-soft); font-size:0.92rem; grid-column:2;}
+  .pub .venue{font-style:italic;}
+  .pub .badge{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.65rem;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--teal);
+    border:1px solid var(--teal);
+    padding:0.1rem 0.4rem;
+    border-radius:2px;
+    display:inline-block;
+    margin-top:0.4rem;
+  }
+  .pub .badge.prep{color:var(--violet); border-color:var(--violet);}
+
+  /* ---------- Teaching ---------- */
+  .course{
+    padding:1.2rem 0;
+    border-top:1px solid var(--line);
+  }
+  .course:last-child{border-bottom:1px solid var(--line);}
+  .course-head{display:flex; justify-content:space-between; align-items:baseline; gap:1rem; flex-wrap:wrap;}
+  .course-head h3{font-size:1.05rem;}
+  .course-head span{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.75rem;
+    color:var(--ink-soft);
+    white-space:nowrap;
+  }
+  .course p{color:var(--ink-soft); margin-top:0.4rem; max-width:60ch;}
+  .placeholder-note{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    color:var(--violet);
+    background:var(--violet-soft);
+    padding:0.8rem 1rem;
+    border-radius:2px;
+    margin-bottom:1.5rem;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    margin-top:5rem;
+    padding-top:2rem;
+    border-top:1px solid var(--line);
+    color:var(--ink-soft);
+    font-size:0.85rem;
+    max-width:var(--max);
+  }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width: 860px){
+    .shell{grid-template-columns:1fr;}
+    nav.side{
+      position:static;
+      height:auto;
+      flex-direction:row;
+      align-items:center;
+      justify-content:space-between;
+      padding:1.4rem 1.4rem;
+      border-bottom:1px solid var(--line);
+      background:var(--paper);
+    }
+    .side-top .role{margin-bottom:0;}
+    .side nav ul{display:flex; gap:1.1rem; flex-wrap:wrap;}
+    .side-bottom{display:none;}
+    main{padding:2.2rem 1.4rem 3.5rem;}
+    section{margin-top:-3.5rem; padding-top:3.5rem;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none !important;}
+  }
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">Skip to content</span></p>
-<p class="p2"><span class="s2">Negar</span></p>
-<p class="p3"><span class="s2">Computational Biology</span></p>
-<p class="p3"><span class="s2">Researcher &amp; Lecturer</span></p>
-<ul class="ul1">
-  <li class="li4"><span class="s3"></span><span class="s2">Home</span></li>
-  <li class="li4"><span class="s3"></span><span class="s2">Research</span></li>
-  <li class="li4"><span class="s3"></span><span class="s2">Publications</span></li>
-  <li class="li4"><span class="s3"></span><span class="s2">Teaching</span></li>
-  <li class="li4"><span class="s3"></span><span class="s2">Contact</span></li>
-</ul>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p6"><span class="s1">A grid warped near two marked tumor points, with a curved geodesic path connecting them instead of a naive straight line.</span></p>
-<p class="p7"><span class="s1">Luminal A</span></p>
-<p class="p7"><span class="s1">Basal</span></p>
-<p class="p8"><span class="s1">fig. geodesic inferred on the pullback metric of a learned latent space</span></p>
-<p class="p9"><span class="s1">View research →</span></p>
-<p class="p10"><span class="s1">Get in touch</span></p>
-<p class="p11"><span class="s1"></span><br></p>
-<p class="p12"><span class="s1">RESEARCH</span></p>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p14"><span class="s1">I build geometric and Bayesian machine learning methods that integrate multi-omic measurements — transcriptomic, epigenomic, and beyond — into a single coherent picture of how tumor states </span><span class="s4">evolv</span><span class="s1">e. My current work treats </span><span class="s5">tumor subtype progression as a trajectory on a curved latent manifold</span><span class="s1">, rather than a cluster label.</span></p>
-<p class="p15"><span class="s1"></span><br></p>
-<p class="p11"><span class="s1"></span><br></p>
-<p class="p12"><span class="s1">PUBLICATIONS</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 22.8px 'Helvetica Neue'; color: #131c1b; -webkit-text-stroke: #131c1b"><span class="s1">Selected work</span></h2>
-<p class="p17"><span class="s1"></span><br></p>
-<p class="p18"><span class="s1">2026</span></p>
-<p class="p19"><span class="s1"></span><br></p>
-<p class="p20"><span class="s6">A</span><span class="s1"> Riemannian approach to infer subtype trajectories in tumor biology</span></p>
+<a href="#home" class="skip-link">Skip to content</a>
+
+<div class="shell">
+  <nav class="side" aria-label="Section navigation">
+    <div class="side-top">
+      <div class="name">Negar</div>
+      <div class="role">Computational Biology<br>Researcher &amp; Lecturer</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="side-bottom">
+      <div>ORCID · Google Scholar</div>
+      <div>Github</div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="home" class="hero">
+      <span class="eyebrow">Geometry of cell state</span>
+      <h1>Reading tumor evolution off the shape of the data.</h1>
+      <p class="lede">
+        I build geometric and Bayesian machine learning methods that integrate multi-omic
+        measurements &mdash; transcriptomic, epigenomic, and beyond &mdash;
+        into a single coherent picture of how tumor states evolve.
+        My current work treats <strong>tumor subtype progression as a
+        trajectory on a curved latent manifold</strong>, rather than a
+        cluster label.
+      </p>
+
+      <figure class="geo-figure">
+        <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="geoTitle geoDesc">
+          <title id="geoTitle">Geodesic path on a warped latent manifold</title>
+          <desc id="geoDesc">A grid warped near two marked cell-state points, with a curved geodesic path connecting them instead of a straight line.</desc>
+          <defs>
+            <linearGradient id="fieldFade" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2f6f62" stop-opacity="0.12"/>
+              <stop offset="1" stop-color="#5b5a86" stop-opacity="0.12"/>
+            </linearGradient>
+          </defs>
+
+          <rect x="0" y="0" width="560" height="220" fill="url(#fieldFade)"/>
+
+          <!-- warped grid: verticals -->
+          <g stroke="#182524" stroke-opacity="0.16" stroke-width="1" fill="none">
+            <path d="M40,10 C 55,70 70,150 60,210"/>
+            <path d="M110,10 C 118,70 122,150 112,210"/>
+            <path d="M180,10 C 178,80 176,140 178,210"/>
+            <path d="M250,10 C 235,80 235,140 250,210"/>
+            <path d="M320,10 C 300,75 300,145 320,210"/>
+            <path d="M390,10 C 378,70 382,150 390,210"/>
+            <path d="M460,10 C 452,70 456,150 460,210"/>
+            <path d="M520,10 C 515,70 518,150 520,210"/>
+          </g>
+          <!-- warped grid: horizontals -->
+          <g stroke="#182524" stroke-opacity="0.16" stroke-width="1" fill="none">
+            <path d="M10,40 C 150,30 350,30 550,40"/>
+            <path d="M10,85 C 150,60 350,60 550,85"/>
+            <path d="M10,130 C 150,155 350,155 550,130"/>
+            <path d="M10,175 C 150,190 350,190 550,175"/>
+          </g>
+
+          <!-- geodesic path -->
+          <path d="M95,60 C 180,40 300,175 460,165" stroke="#2f6f62" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+          <!-- endpoints -->
+          <circle cx="95" cy="60" r="5.5" fill="#5b5a86"/>
+          <circle cx="460" cy="165" r="5.5" fill="#2f6f62"/>
+
+          <text x="70" y="42" font-family="JetBrains Mono, monospace" font-size="11" fill="#45534f">Luminal A</text>
+          <text x="405" y="188" font-family="JetBrains Mono, monospace" font-size="11" fill="#45534f">Basal</text>
+        </svg>
+        <div class="geo-caption">fig. geodesic inferred on the pullback metric of a learned latent space</div>
+      </figure>
+
+      <div class="cta-row">
+        <a class="btn" href="#research">View research →</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="research">
+      <span class="eyebrow">Research</span>
+      <h2 style="font-size:1.9rem; margin:0.5rem 0 2rem;">What I work on</h2>
+
+      <div class="research-block">
+        
+      <p class="p20"><span class="s6">A</span><span class="s1"> Riemannian approach to infer subtype trajectories in tumor biology</span></p>
 <p class="p21"><span class="s1">Poster, International Society of Bayesian Analysis World Meeting</span></p>
 <p class="p22"><span class="s1">ACCEPTED</span></p>
 <p class="p19"><span class="s1"></span><br></p>
 <p class="p20"><span class="s1">A Dirichlet</span><span class="s6">-</span><span class="s1">based network for multi-omic data integration</span></p>
 <p class="p21"><span class="s1">Journal, Nature Communications Biology</span></p>
 <p class="p22"><span class="s7">PUBLISHED</span></p>
-<p class="p23"><span class="s1"></span><br></p>
-<p class="p11"><span class="s1"></span><br></p>
-<p class="p12"><span class="s1">TEACHING</span></p>
-<h2 style="margin: 0.0px 0.0px 24.0px 0.0px; font: 22.8px 'Helvetica Neue'; color: #131c1b; -webkit-text-stroke: #131c1b"><span class="s1">Courses</span></h2>
-<p class="p20"><span class="s8">Information Geometry for Generative AI</span></p>
+      </div>
+
+
+
+    </section>
+
+    <hr class="divider">
+
+    <section id="publications">
+      <span class="eyebrow">Publications</span>
+      <h2 style="font-size:1.9rem; margin:0.5rem 0 1rem;">Selected work</h2>
+
+      <div class="pub">
+        <div class="year">In prep</div>
+        <div>
+          <div class="title">Refrajectory: geodesic trajectory inference on refractive latent manifolds for tumor subtype progression</div>
+          <div class="meta venue">Target venue: Nature Communications</div>
+          <div class="badge prep">In preparation</div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">2026</div>
+        <div>
+          <div class="title">Refrajectory: a Riemannian approach to subtype trajectories in breast cancer and uterine fibroid biology</div>
+          <div class="meta venue">Poster, ISBA World Meeting</div>
+          <div class="badge">Accepted</div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="year">—</div>
+        <div>
+          <div class="title">OMIDIENT: a method for multi-omic data integration</div>
+          <div class="meta venue">Published</div>
+        </div>
+      </div>
+
+      <p style="margin-top:1.6rem; color:var(--ink-soft); font-size:0.9rem;">
+        Full list available on Google Scholar / ORCID (links in sidebar).
+      </p>
+    </section>
+
+    <hr class="divider">
+
+    <section id="teaching">
+      <span class="eyebrow">Teaching</span>
+      <h2 style="font-size:1.9rem; margin:0.5rem 0 2rem;">Courses</h2>
+
+      <p class="p20"><span class="s8">Information Geometry for Generative AI</span></p>
 <p class="p25"><span class="s1">2025 - master's and doctoral</span></p>
 <p class="p26"><span class="s1"></span><br></p>
 <h3 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #131c1b; -webkit-text-stroke: #131c1b"><span class="s1">Probabilistic Machine Learning</span></h3>
 <p class="p25"><span class="s1">2020 to 2024 - master's and doctoral</span></p>
-<p class="p15"><span class="s1"></span><br></p>
-<p class="p12"><span class="s1">CONTACT</span></p>
-<p class="p27"><span class="s1">For collaboration, teaching, or speaking inquiries, reach out at <a href="mailto:your.email@institution.edu"><span class="s9">negar@math.su.se</span></a></span></p>
-<p class="p27"><span class="s1">© 2026 Negar. Built with care.</span></p>
+    </section>
+
+    <footer id="contact">
+      <span class="eyebrow">Contact</span>
+      <p style="margin-top:0.8rem;">
+        For collaboration, teaching, or speaking inquiries, reach out at
+        <a href="negar@math.su.se">your.email@institution.edu</a>.
+      </p>
+      <p>&copy; 2026 Negar. Built with care.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+  // Highlight active section link on scroll
+  const links = document.querySelectorAll('nav.side a[href^="#"]');
+  const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href')));
+
+  function setActive(){
+    let current = sections[0];
+    const scrollPos = window.scrollY + 120;
+    sections.forEach(sec => { if(sec && sec.offsetTop <= scrollPos) current = sec; });
+    links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current.id));
+  }
+  document.addEventListener('scroll', setActive, {passive:true});
+  setActive();
+</script>
+
 </body>
 </html>
