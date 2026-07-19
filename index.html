@@ -202,7 +202,14 @@
 }
 
 
-
+.curve-text{
+  display:block;
+  width:100%;
+  max-width:420px;
+  height:auto;
+  overflow:visible;
+  color:var(--ink);
+}
 
 @media (max-width: 860px){
   .hero-top{flex-direction:column-reverse; gap:1.2rem;}
@@ -433,7 +440,18 @@
     <section id="home" class="hero">
 
       <span class="eyebrow">Geometry of tumor state</span>
-      <h1>Reading tumors off the Riemannian geometry.</h1>
+      
+      <h1>
+  Reading tumors off the
+  <svg class="curve-text" viewBox="0 0 380 100" preserveAspectRatio="xMinYMid meet">
+    <path id="curvePath" d="M5,75 C100,15 260,15 375,55" fill="none" stroke="none"/>
+    <text font-family="Fraunces, serif" font-weight="500" font-size="42" fill="currentColor">
+      <textPath href="#curvePath" startOffset="0">Riemannian geometry.</textPath>
+    </text>
+  </svg>
+</h1>
+      
+      
       <p class="lede">
         I build geometric and Bayesian machine learning methods for molecular
         measurements &mdash; transcriptomic, epigenomic, and beyond &mdash;
