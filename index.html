@@ -91,8 +91,24 @@
   .side-top .role{
     font-size:0.85rem;
     color:var(--ink-soft);
-    margin-bottom:2rem;
   }
+  
+  
+  .id-row{
+  display:flex;
+  align-items:center;
+  gap:0.85rem;
+  margin-bottom:2rem;
+}
+.avatar{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid var(--line);
+  flex-shrink:0;
+}
+  
 
   .side nav ul{list-style:none; margin:0; padding:0;}
   .side nav li{margin-bottom:0.65rem;}
@@ -154,22 +170,7 @@
   }
   .hero .lede strong{color:var(--ink); font-weight:600;}
   
-  
-  .hero-top{
-  display:flex;
-  gap:2.2rem;
-  align-items:flex-start;
-  justify-content:space-between;
-}
-.hero-text{flex:1; min-width:0;}
-.hero-photo{
-  width:150px;
-  height:170px;
-  object-fit:cover;
-  border:1px solid var(--line);
-  border-radius:2px;
-  flex-shrink:0;
-}
+
 
 
 @media (max-width: 860px){
@@ -327,9 +328,17 @@
 
 <div class="shell">
   <nav class="side" aria-label="Section navigation">
+    
+    
     <div class="side-top">
+  <div class="id-row">
+    <img class="avatar" src="me.png" alt="Portrait of Negar">
+    <div>
       <div class="name">Negar Safinianaini</div>
       <div class="role">Computational Biology<br>Lecturer &amp; Researcher</div>
+    </div>
+  </div>
+
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#research">Research</a></li>
@@ -346,8 +355,7 @@
   <main>
 
     <section id="home" class="hero">
-      <div class="hero-top">
-      <div class="hero-text">
+
       <span class="eyebrow">Geometry of tumor state</span>
       <h1>Reading tumor evolution off the shape of the data.</h1>
       <p class="lede">
@@ -404,10 +412,6 @@
         </svg>
         <div class="geo-caption">fig. geodesic inferred on the pullback metric of a learned latent space</div>
       </figure>
-      
-          </div>
-         <img class="hero-photo" src="me.png" alt="Portrait of Negar">
-       </div>
         
 
       <div class="cta-row">
